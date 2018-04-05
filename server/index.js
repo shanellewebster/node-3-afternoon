@@ -47,7 +47,7 @@ app.get('/api/user', auth_controller.getUser);
 //CART ENDPOINTS
 app.post('/api/cart', cart_controller.add);
 app.post('/api/cart/checkout', cart_controller.checkout);
-app.delete('./api/cart', cart_controller.delete);
+app.delete('/api/cart', cart_controller.delete);
 
 //SEARCH ENDPOINT
 app.get('/api/search', search_controller.search);
